@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Meat Akhni</title>
+    <style>
+        body {
+            background-color: #0c0907;
+            color: #f9f6f0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .wrapper {
+            width: 90%;
+            max-width: 400px;
+            /* Using the image with a heavier, cleaner gradient tint */
+            background: linear-gradient(rgba(26, 19, 14, 0.82), rgba(26, 19, 14, 0.9)), url('flyer.jpg');
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #cca43b;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.7);
+        }
+        /* Logo Circle Styling to match the original layout */
+        .avatar-container {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 12px auto;
+            border-radius: 50%;
+            border: 2px solid #cca43b;
+            overflow: hidden;
+            background-color: #1a130e;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .tagline {
+            color: #a69e97; 
+            margin: 0; 
+            font-size: 0.95rem; 
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+            font-weight: 500;
+        }
+        .price {
+            font-size: 2.6rem;
+            color: #cca43b;
+            font-weight: 800;
+            margin: 10px 0 15px 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+        }
+        .box {
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            border-left: 4px solid #e04f32;
+        }
+        .btn {
+            display: block;
+            background-color: #e04f32;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 15px rgba(224, 79, 50, 0.4);
+        }
+        .btn-map {
+            display: block;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #cca43b;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 12px;
+            border: 1px solid #cca43b;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- Pulls the logo profile photo directly from the flyer asset -->
+    <div class="avatar-container">
+        <img src="flyer.jpg" alt="Logo">
+    </div>
+    
+    <p class="tagline">Premium Quality & Authentic Spices</p>
+    
+    <div class="price">R100 / Kilo</div>
+    
+    <div class="box">
+        📍 <strong>Location:</strong> 160 Belgravia Road, Rustdale<br>
+        📅 <strong>Day:</strong> Every Sunday<br>
+        ⏳ <strong>Note:</strong> Pre-orders required.
+    </div>
+
+    <a href="https://wa.me/27834540543?text=Slm%20Ahki,%20I%20saw%20your%20Akhni%20page.%20I%20would%20like%20to%20order%20____%20Kilos%20for%20this%20coming%20Sunday." class="btn">Order via WhatsApp</a>
+    
+    <a href="https://www.google.com/maps/search/?api=1&query=160+Belgravia+Road+Rustdale+Cape+Town" target="_blank" class="btn-map">📍 Open Map Location</a>
+</div>
+
+</body>
+</html>
