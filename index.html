@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Meat Akhni</title>
+    <style>
+        :root {
+            --bg-main: #0a0806;
+            --surface-card: #14100d;
+            --surface-box: #1c1712;
+            --accent-primary: #d63f22;
+            --accent-gold: #cca43b;
+            --text-primary: #ffffff;
+            --text-secondary: #a39990;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 380px;
+            margin: 20px;
+        }
+
+        .profile-card {
+            background-color: var(--surface-card);
+            border: 1px solid rgba(204, 164, 59, 0.12);
+            border-radius: 20px;
+            padding: 32px 24px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .logo-frame {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            border: 2px solid var(--accent-gold);
+            overflow: hidden;
+            background-color: var(--bg-main);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .logo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .brand-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            margin: 0 0 6px 0;
+            color: var(--text-primary);
+        }
+
+        .tagline {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin: 0 0 24px 0;
+            letter-spacing: 0.2px;
+        }
+
+        .price-container {
+            margin: 0 0 24px 0;
+        }
+
+        .price-amount {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            line-height: 1;
+        }
+
+        .price-unit {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .info-panel {
+            text-align: left;
+            background-color: var(--surface-box);
+            border-left: 3px solid var(--accent-gold);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 28px;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }
+
+        .info-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-icon {
+            margin-right: 12px;
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .info-text strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .info-text span {
+            color: var(--text-secondary);
+            display: block;
+            margin-top: 2px;
+        }
+
+        .btn-primary {
+            display: block;
+            background-color: var(--accent-primary);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            letter-spacing: 0.3px;
+            box-shadow: 0 6px 20px rgba(214, 63, 34, 0.25);
+            transition: transform 0.15s ease, background-color 0.15s ease;
+            margin-bottom: 12px;
+        }
+
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+
+        .btn-secondary {
+            display: block;
+            background-color: transparent;
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 14px;
+            border: 1px solid rgba(204, 164, 59, 0.4);
+            border-radius: 12px;
+            font-size: 0.95rem;
+            letter-spacing: 0.2px;
+            transition: background-color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .btn-secondary:active {
+            background-color: rgba(204, 164, 59, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-card">
+        <div class="logo-frame">
+            <img src="flyer.jpg" alt="Business Logo">
+        </div>
+        
+        <h1 class="brand-title">Meat Akhni</h1>
+        <p class="tagline">Authentic Spices & Premium Quality</p>
+        
+        <div class="price-container">
+            <div class="price-amount">R100<span class="price-unit"> / Kilo</span></div>
+        </div>
+        
+        <div class="info-panel">
+            <div class="info-row">
+                <div class="info-icon">📍</div>
+                <div class="info-text">
+                    <strong>Collection Address</strong>
+                    <span>160 Belgravia Road, Rustdale</span>
+                </div>
+            </div>
+            <div class="info-row" style="margin-top: 14px;">
+                <div class="info-icon">📅</div>
+                <div class="info-text">
+                    <strong>Service Schedule</strong>
+                    <span>Available Every Sunday</span>
+                </div>
+            </div>
+            <div class="info-row" style="margin-top: 14px;">
+                <div class="info-icon">⏳</div>
+                <div class="info-text">
+                    <strong>Ordering Requirement</strong>
+                    <span>Pre-orders mandatory to secure placement</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://wa.me/27834540543?text=Slm%20Ahki,%20I%20saw%20your%20Akhni%20page.%20I%20would%20like%20to%20order%20____%20Kilos%20for%20this%20coming%20Sunday." class="btn-primary">Order via WhatsApp</a>
+        
+        <a href="https://www.google.com/maps/search/?api=1&query=160+Belgravia+Road+Rustdale+Cape+Town" target="_blank" class="btn-secondary">Open Collection Map</a>
+    </div>
+</div>
+
+</body>
+</html>
